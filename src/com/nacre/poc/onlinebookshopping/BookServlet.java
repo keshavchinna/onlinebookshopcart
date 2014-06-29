@@ -40,7 +40,7 @@ public class BookServlet extends HttpServlet {
 		HttpSession session = request.getSession( false );
 		ServletContext servletContext = request.getServletContext();
         RequestDispatcher dispatcher =
-                request.getRequestDispatcher( "JSP/Home.jsp" );
+                request.getRequestDispatcher( "JSP/index.jsp" );
         if ( session == null )
             dispatcher.forward( request, response );
 		Object attribute = servletContext.getAttribute("map");

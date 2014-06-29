@@ -46,7 +46,7 @@ public class AddToCartServlet extends HttpServlet {
 		      RequestDispatcher dispatcher;
 		      if ( session == null ) {
 		         dispatcher = 
-		            request.getRequestDispatcher( "JSP/Home.jsp" );
+		            request.getRequestDispatcher( "JSP/index.jsp" );
 		         dispatcher.forward( request, response );
 		      }
 		      
